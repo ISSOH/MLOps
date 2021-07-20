@@ -1,0 +1,22 @@
+# Conda environment specification. The dependencies defined in this file will
+# be automatically provisioned for runs with userManagedDependencies=False.
+
+name: project_environment
+dependencies:
+
+- python=3.6.2
+- pip:
+  - numpy
+  - onnxruntime
+  - joblib
+  - azureml-core
+  - azureml-monitoring
+  - azureml-defaults
+  - scikit-learn==0.22.2
+  - inference-schema
+  - inference-schema[numpy-support]
+  
+channels:
+ - anaconda
+ - conda-forge
+
